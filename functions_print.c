@@ -6,6 +6,8 @@
 /**
  * print_char - Prints a char
  * @args: Argument pointer
+ * Return: The number of characters printed.
+ *
  */
 int print_char(va_list args)
 {
@@ -14,8 +16,10 @@ int print_char(va_list args)
 }
 
 
-/** print_string - Prints a string
+/**
+ * print_string - Prints a string
  * @args: Argument pointer
+ * Return: The number of characters printed.
  *
  */
 
@@ -33,6 +37,12 @@ int print_string(va_list args)
 		return (i);
 }
 
+/**
+ * print_decimal - Prints a decimal number
+ * @args: Argument pointer
+ * Return: The number of characters printed.
+ *
+ */
 int print_decimal(va_list args)
 {
 	int i = 0, n = 0;
@@ -49,7 +59,12 @@ int print_decimal(va_list args)
 	return (i);
 }
 
-
+/**
+ * print_integer - Prints an integer number
+ * @args: Argument pointer
+ * Return: The number of characters printed.
+ *
+ */
 int print_integer(va_list args)
 {
 	int i = 0, n = 0;
